@@ -1,0 +1,113 @@
+.nav {
+  text-align: center;
+  background-color: salmon;
+  padding: 5px;
+}
+
+.nav-item {
+  margin: 20px;
+  font-family:'Times New Roman', Times, serif;
+  font-weight: bold;
+  font-size: larger;
+  color:bisque;
+  text-decoration: none;
+}
+
+
+.homepage {
+  margin: 30px;
+  display: grid;
+  justify-items: center;
+}
+
+.item {
+  display: grid;
+  grid-template-columns:max-content;
+  padding: 5px;
+  margin: 10px;
+}
+
+.input-box {
+  margin-left: 10px;
+  height: 30px; /* Adjust the height as needed */
+  vertical-align: middle; /* Align the elements vertically */
+}
+
+
+.group-whole {
+  padding: 10px;
+}
+
+.group {
+  display: grid;
+  /*grid-template-columns: repeat(2, 1fr);*/ /* Adjust the number of columns to 2 */
+  grid-gap: 10px; /* Adjust the gap between columns */
+  padding: 10px;
+}
+
+.date {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Start with one column and adjust as needed */
+  grid-gap: 10px; /* Adjust the gap between dates */
+  grid-auto-flow: row dense; /* Allow items to wrap to the next row if there is not enough space */
+}
+
+@media (min-width: 600px) {
+  .date {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 2fr)); /* Switch to two columns when screen width is at least 600px */
+  }
+}
+
+.reservationGroup {
+  margin: 20px;
+}
+
+.res-item {
+  margin: 10px; /* Adjust margin between each res-item */
+  border: 1px solid black; /* Add border to create the smaller box */
+  padding: 10px;
+  width: 300px;
+  display: grid;
+  vertical-align: top;
+  word-wrap: break-word;
+}
+
+.reservationFilter {
+  margin: 20px;
+}
+
+.name {
+  margin: 20px;
+}
+
+.key {
+  margin: 10px;
+  border: 1px solid black;
+  padding: 10px;
+  width: 300px;
+  display: inline-block;
+  vertical-align: top;
+  word-wrap: break-word;
+}
+
+.user {
+  margin: 10px;
+  padding: 10px;
+}
+
+.search {
+  display: inline-block;
+  align-items: center; /* Align items vertically */
+}
+
+h1 {
+  color:salmon !important;
+  font-family: 'Times New Roman', Times, serif;
+  padding: '10px';
+}
+
+h3 {
+  color:salmon !important;
+  font-family: 'Times New Roman', Times, serif;
+  padding: '10px';
+}
